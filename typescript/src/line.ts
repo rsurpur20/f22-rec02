@@ -1,12 +1,15 @@
 import { newPolarPoint, PolarPoint } from "./points/polarPoint";
+import {Point}  from "./points/Point";
 
-function newLine (point1: PolarPoint, point2: PolarPoint) {
+
+
+function newLine (point1: Point, point2: Point) {
     return {    
         draw() {
-            const x1: number = point1.computeX();
-            const y1: number = point1.computeY();
-            const x2: number = point2.computeX();
-            const y2: number = point2.computeY();
+            const x1: number = point1.x
+            const y1: number = point1.y
+            const x2: number = point2.x
+            const y2: number = point2.y
             
             // assume implementation 
     

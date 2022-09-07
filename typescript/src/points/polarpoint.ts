@@ -7,7 +7,7 @@ interface PolarPoint {
 
 function newPolarPoint (len: number, angle: number): PolarPoint {
     return {
-        len,
+        len, 
         angle,
 
         computeX: function (): number {
